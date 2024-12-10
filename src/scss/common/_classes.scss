@@ -1,0 +1,8 @@
+@use "../presets/index" as *;
+@use "../mixins/index" as *;
+
+
+.container {
+    width: min(100% - $gap-lg, $container-size);
+    margin-inline: auto;
+}
