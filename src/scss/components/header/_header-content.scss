@@ -2,46 +2,6 @@
 @use "../../mixins/index" as *;
 
 
-.navigation{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-.logo{
-    margin-right: 214px;
-}
-
-
-.navigation__list{
-    display: flex;
-    align-items: center;
-    gap: $gap-x2;
-    margin-right: calc($gap-x5 + $gap);
-}
-.navigation__link{
-    color: $color-white;
-    text-decoration: none;
-}
-.navigation__link:hover{
-    color: $color-hover;
-    transition: all 0.5s ease;
-}
-.navigation__item{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-}
-.navigation__item:hover{
-    list-style-image: url("../../../../assets/images/ellipse.svg");
-    transition: all 0.5s ease;
-    display: flex;
-    align-items: center;
-}
-
-
-
 .product-basket{
     display: flex;
     align-items: center;
@@ -54,15 +14,15 @@
 .product__count{
     text-decoration: none;
     font-size: 1.5rem;
-    margin-right: 44px;
     color: $color-white;
 }
 .contact{
     display: flex;
     align-items: center;
     gap: $gap-sm;
+    margin-left: 43px;
 }
-.contact__btn{
+.contact-btn{
     text-decoration: none;
     color: $color-white;
     font-weight: 700;
@@ -70,7 +30,7 @@
     border-radius: 4px;
     padding: 1rem 2rem;
 }
-.contact__btn:hover{
+.contact-btn:hover{
     text-decoration: none;
     color: $color-white;
     font-weight: 700;
@@ -78,4 +38,26 @@
     border: 1px rgba(0,0,0,0.3) solid;
     padding: 1rem 2rem;
     transition: all 0.3s ease;
+}
+.navigation__container{
+    background-color: $color-dark;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header-main{
+    padding-top: 309px;
+}
+.main__title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.01px;
+    text-align: left;
+    max-width: 604px;
+    max-height: 98px;
+    color: $color-text;
+    margin-bottom: 70px;
+    letter-spacing: 0.25px;
 }
