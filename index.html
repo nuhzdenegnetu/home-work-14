@@ -15,7 +15,7 @@
 <body>
 <header class="header">
     <nav class="navigation">
-        <div class="container">
+        <div class="container-width">
             <div class="navigation__container">
                 <a class="navigation__logo" href="">
                     <img class="logo" src="assets/images/logo.svg" alt="logo">
@@ -45,19 +45,196 @@
         </div>
     </nav>
     <div class="header-main">
-        <div class="container">
+        <div class="container-width">
             <div class="main-container">
                 <img src="assets/images/logo-content.svg" class="main__logo" alt="logo">
-                <p class="main__title">
-                    Our Barbershop  is a place of style and mutual understanding in which it is pleasant to spend time.
-                </p>
+                <h1 class="main__title">
+                    Our Barbershop is a place of style and mutual understanding in which it is pleasant to spend time.
+                </h1>
                 <a href="" class="main__btn contact-btn">BOOK NOW</a>
             </div>
         </div>
     </div>
 </header>
 <main class="main">
-
+    <section class="section-price">
+        <div class="price-title title">
+            <span class="price__ellipse ellipse"></span>
+            <h2 class="price__title about">Our service</h2>
+        </div>
+        <div class="container-price__bg">
+            <div class="container-width">
+                <ul class="price__list">
+                    <li class="price__item">
+                        <img class="price__image" src="icon/1.svg" alt="service-1">
+                        <div class="price__object">
+                            <span class="price__text">Men's haircut</span>
+                            <span class="price__time">60 min.</span>
+                            <span class="price__cost">350 / 400 / 450 ₴</span>
+                        </div>
+                    </li>
+                    <li class="price__item">
+                        <img class="price__image" src="icon/2.svg" alt="service-1">
+                        <div class="price__object">
+                            <span class="price__text">Men's haircut</span>
+                            <span class="price__time">60 min.</span>
+                            <span class="price__cost">350 / 400 / 450 ₴</span>
+                        </div>
+                    </li>
+                    <li class="price__item">
+                        <img class="price__image" src="icon/3.svg" alt="service-1">
+                        <div class="price__object">
+                            <span class="price__text">Men's haircut</span>
+                            <span class="price__time">60 min.</span>
+                            <span class="price__cost">350 / 400 / 450 ₴</span>
+                        </div>
+                    </li>
+                    <li class="price__item">
+                        <img class="price__image" src="icon/4.svg" alt="service-1">
+                        <div class="price__object">
+                            <span class="price__text">Men's haircut</span>
+                            <span class="price__time">60 min.</span>
+                            <span class="price__cost">350 / 400 / 450 ₴</span>
+                        </div>
+                    </li>
+                    <li class="price__item">
+                        <img class="price__image" src="icon/5.svg" alt="service-1">
+                        <div class="price__object">
+                            <span class="price__text">Men's haircut</span>
+                            <span class="price__time">60 min.</span>
+                            <span class="price__cost">350 / 400 / 450 ₴</span>
+                        </div>
+                    </li>
+                    <li class="price__item">
+                        <img class="price__image" src="icon/6.svg" alt="service-1">
+                        <div class="price__object">
+                            <span class="price__text">Men's haircut</span>
+                            <span class="price__time">60 min.</span>
+                            <span class="price__cost">350 / 400 / 450 ₴</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="section-about">
+        <div class="container-width">
+            <div class="about-title title">
+                <span class="about__ellipse ellipse"></span>
+                <h2 class="about__title about">Our team</h2>
+            </div>
+            <div class="about__container">
+                <div class="about__images">
+                    <img class="about__image" src="assets/images/jakob-owens-lkMJcGDZLVs-unsplash2.png"
+                         alt="about-image">
+                    <div class="highlight">
+                        <img class="about__image about__image--active"
+                             src="assets/images/jakob-owens-lkMJcGDZLVs-unsplash1.png" alt="about-image">
+                    </div>
+                    <img class="about__image" src="assets/images/jakob-owens-lkMJcGDZLVs-unsplash3.png"
+                         alt="about-image">
+                    <img class="about__image" src="assets/images/jakob-owens-lkMJcGDZLVs-unsplash4.png"
+                         alt="about-image">
+                </div>
+                <div class="about-info">
+                    <h3 class="about-info__title">Jorge Jones</h3>
+                    <p class="about__text">
+                        - How did you become a barber? <br>
+                        - I decided to master the creative profession. And he found himself precisely in this. So my
+                        life has changed dramatically. <br>
+                        - What exactly do you like in your profession? Why are you blissing? <br>
+                        - I like to work in a men's team, communicating with interesting people. <br>
+                        - Why should a person who wants a haircut choose you? <br>
+                        - Because I'm old and charismatic. <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-form">
+        <form class="form" action="">
+            <div class="form-container">
+                <div class="container__title">
+                    <h3 class="form__title">Book an appointment <br> right now!</h3>
+                    <p class="form__description">Please Complete all these fields.</p>
+                </div>
+                <div class="input__name">
+                    <p class="input-name__title">Name:</p>
+                    <input class="form__input" type="text" id="form__name" placeholder="Gregory Simmmons">
+                    <label for="form__name" class="label-text"></label>
+                </div>
+                <div class="timing">
+                    <div class="input__name">
+                        <p class="input-name__title">Date:</p>
+                        <input class="form__input md" type="text" id="form__date" placeholder="Enter date">
+                        <label for="form__date"></label>
+                    </div>
+                    <div class="input__name">
+                        <p class="input-name__title">Time:</p>
+                        <input class="form__input md" type="text" id="form__time" placeholder="Enter time">
+                        <label for="form__time"></label>
+                    </div>
+                </div>
+                <div class="master">
+                    <p class="input-master__title">Choose a master:</p>
+                    <div class="input-master">
+                        <div class="input-master__container">
+                            <label class="input-master__label" for="form__master1">
+                                <input class="form__master" type="radio" id="form__master1" name="choosing__master"
+                                       value="master1"><span class="custom-radio"></span>Choose something
+                            </label>
+                            <label class="input-master__label" for="form__master2">
+                                <input class="form__master" type="radio" id="form__master2" name="choosing__master"
+                                       value="master2"><span class="custom-radio"></span>Choose something
+                            </label>
+                            <label class="input-master__label" for="form__master3">
+                                <input class="form__master" type="radio" id="form__master3" name="choosing__master"
+                                       value="master3" checked><span class="custom-radio"></span>Choose something
+                            </label>
+                            <label class="input-master__label" for="form__master4">
+                                <input class="form__master" type="radio" id="form__master4" name="choosing__master"
+                                       value="master4"><span class="custom-radio"></span>Choose something
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="service">
+                    <p class="service__title">Choose a services:</p>
+                    <div class="input-service">
+                        <div class="input-service__container">
+                            <label class="input-service__label" for="form__service1">
+                                <input class="input-service__input" type="checkbox" id="form__service1" name="choosing__service"
+                                value="service1"><span class="custom-checkbox"></span>Choose something
+                            </label>
+                            <label class="input-service__label" for="form__service2">
+                                <input class="input-service__input" type="checkbox" id="form__service2" name="choosing__service"
+                                       value="service1"><span class="custom-checkbox"></span>Choose something
+                            </label>
+                            <label class="input-service__label" for="form__service3">
+                                <input class="input-service__input" type="checkbox" id="form__service3" name="choosing__service"
+                                       value="service1"><span class="custom-checkbox"></span>Choose something
+                            </label>
+                            <label class="input-service__label" for="form__service4">
+                                <input class="input-service__input" type="checkbox" id="form__service4" name="choosing__service"
+                                       value="service1"><span class="custom-checkbox"></span>Choose something
+                            </label>
+                            <label class="input-service__label" for="form__service5">
+                                <input class="input-service__input" type="checkbox" id="form__service5" name="choosing__service"
+                                       value="service1"><span class="custom-checkbox"></span>Choose something
+                            </label>
+                            <label class="input-service__label" for="form__service6">
+                                <input class="input-service__input" type="checkbox" id="form__service6" name="choosing__service"
+                                       value="service1"><span class="custom-checkbox"></span>Choose something
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="sending">
+                    <a href="" class="sending__btn contact-btn">BOOK NOW</a>
+                </div>
+            </div>
+        </form>
+    </section>
 </main>
 </body>
 </html>

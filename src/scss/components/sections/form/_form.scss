@@ -1,0 +1,214 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+
+
+.section-form{
+    padding: 63px 0;
+    width: 100%;
+    //background-color: rgba(0,0,0, 0.8);
+    background-image: url(../../../../../assets/images/bg-image--form.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    width: min(100% - $gap-lg, 799px);
+    margin-inline: auto;
+    background-color: $color-white;
+}
+.form__title{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.4px;
+    margin: 0;
+}
+.form-container{
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100% - 64px, 547px);
+    margin-inline: auto;
+    margin: 54px 0 0 0;
+}
+.form__description{
+    text-align: center;
+    margin: 21px 0 23px 0;
+    font-weight: 400;
+}
+.container__title{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.input__name{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 21px 0 0 0;
+    width: 100%;
+}
+.input-name__title{
+    margin: 0 0 6px 24px;
+}
+.form__input{
+    height: 44px;
+    border: 1px rgba(223, 223, 223, 1) solid;
+    border-radius: 4px;
+    text-transform: capitalize;
+    color: $color-grey-dark;
+}
+input::placeholder {
+    transform: translateX(24px);
+}
+input:focus {
+    padding: 0 0 0 22px;
+}
+.form__name{
+    margin: 0;
+    padding: 0;
+}
+.md{
+    width: 235px;
+}
+.md:focus{
+    width: 235px;
+}
+.timing{
+    display: flex;
+    gap: 65px;
+}
+
+
+.master{
+    margin: 20px 0 0 0;
+}
+.input-master__title{
+    margin: 0 0 10px 24px;
+}
+.input-master__container{
+    border: 1px rgba(223, 223, 223, 1) solid;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    grid-template-rows: repeat(2, 1fr); /* 2 строки */
+    column-gap: 120px;
+    row-gap: 5px;
+    padding: 18px 29px;
+}
+/* Радиокнопки и текст рядом */
+.input-master__label{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #444;
+    cursor: pointer;
+    position: relative;
+}
+/* Стили для input (радиокнопок) */
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + .custom-radio::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: $color-hover; /* Оранжевый цвет заполнения */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.custom-radio {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black; /* Чёрный контур */
+    border-radius: 50%; /* Делаем круг */
+    position: relative;
+    margin-right: 11px;
+}
+
+.service{
+    margin: 20px 0 3rem 0;
+}
+.service__title{
+    margin: 0 0 6px 24px;
+}
+.input-service__container{
+    border: 1px rgba(223, 223, 223, 1) solid;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    grid-template-rows: repeat(3, 1fr); /* 2 строки */
+    column-gap: 120px;
+    row-gap: 5px;
+    padding: 10px 29px;
+}
+/* Радиокнопки и текст рядом */
+.input-service__label{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #444;
+    cursor: pointer;
+    position: relative;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border: 2px solid black; /* Чёрная рамка для неактивного состояния */
+    border-radius: 4px; /* Скругление углов */
+    background-color: white; /* Белый фон по умолчанию */
+    position: relative;
+    margin-right: 7px;
+}
+/* Стили для input (радиокнопок) */
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: $color-hover; /* Оранжевый фон для выбранного состояния */
+    border-color: $color-hover;
+}
+input[type="checkbox"]:checked + .custom-checkbox::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -2px;
+    width: 8px;
+    height: 14px;
+    border: solid white; /* Белая галочка */
+    border-width: 0 3px 3px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+input:focus{
+    width: 520px;
+    height: 44px;
+    color: $color-dark;
+    border: 1px transparent $color-hover;
+    outline: none;
+}
+.sending{
+    margin: 0 0 5rem 0;
+}
+.sending__btn{
+    background-color: $color-dark;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    border: 1px #ffffff solid;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+}
+
+
+

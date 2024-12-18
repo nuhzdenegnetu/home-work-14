@@ -58,6 +58,12 @@
     max-width: 604px;
     max-height: 98px;
     color: $color-text;
-    margin-bottom: 70px;
     letter-spacing: 0.25px;
+}
+.main-container{
+    display: flex;
+    gap: $gap-x3;
+    flex-direction: column;
+    max-width: $container-size;
+    align-items: self-start;
 }
