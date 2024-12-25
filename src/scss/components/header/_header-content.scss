@@ -37,7 +37,7 @@
     background-color: $color-hover;
     border: 1px rgba(0,0,0,0.3) solid;
     padding: 1rem 2rem;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s, transform 0.3s;
 }
 .navigation__container{
     background-color: $color-dark;
