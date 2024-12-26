@@ -1,13 +1,13 @@
 @use "../../../presets/index" as *;
 @use "../../../mixins/index" as *;
 
-.production{
-    margin-bottom: 100px;
+.section-production{
+    margin-bottom: 174px;
 }
 .production-title {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: $gap;
     margin-bottom: 4rem;
 }
 

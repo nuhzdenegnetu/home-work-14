@@ -1,26 +1,30 @@
 @use "../../../presets/index" as *;
 @use "../../../mixins/index" as *;
 
-.about__images  {
+.about__images {
     display: flex;
     align-items: flex-end;
     gap: $gap;
 }
+
 .about__image {
     height: 200px;
     width: 134px;
 }
-.about__image--active{
+
+.about__image--active {
     width: 197px;
     height: 293px;
     object-fit: cover; /* Обрезка изображения для сохранения пропорций */
     display: block;
 }
-.highlight{
+
+.highlight {
     position: relative; /* Для работы псевдоэлемента */
     display: inline-block;
     margin-right: 10px;
 }
+
 .highlight::after {
     content: '';
     position: absolute;

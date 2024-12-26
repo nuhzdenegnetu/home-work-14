@@ -2,7 +2,6 @@
 @use "../../../mixins/index" as *;
 
 
-
 .input-master__title {
     margin: 0 0 10px 24px;
 }
@@ -34,7 +33,6 @@ input[type="radio"]:checked + .custom-radio::after {
     border-radius: 50%;
     transform: translate(-50%, -50%);
 }
-
 
 
 .input__name {

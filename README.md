@@ -33,4 +33,10 @@
 
 1. Склонируйте репозиторий:
    ```bash
-   git clone 
+   git clone https://github.com/nuhzdenegnetu/home-work-14
+   
+2. Установка архива с проектом:
+   - https://github.com/nuhzdenegnetu/home-work-14
+   - Code < >
+   - Download ZIP
+

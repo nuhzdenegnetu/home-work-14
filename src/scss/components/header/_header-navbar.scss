@@ -2,8 +2,7 @@
 @use "../../mixins/index" as *;
 
 
-
-.navigation{
+.navigation {
     background-color: $color-dark;
     width: 100%;
     display: flex;
@@ -14,22 +13,26 @@
     position: fixed;
     z-index: 2;
 }
-.navigation__list{
+
+.navigation__list {
     display: flex;
     align-items: center;
     gap: $gap-x2;
     margin-right: calc($gap-x5 + $gap);
 }
-.navigation__link{
+
+.navigation__link {
     color: $color-white;
     text-decoration: none;
 }
-.navigation__link:hover{
+
+.navigation__link:hover {
     color: $color-hover;
     transition: all 0.5s ease;
     font-weight: 700;
 }
-.navigation__item{
+
+.navigation__item {
     list-style-type: none;
     display: flex;
     align-items: center;

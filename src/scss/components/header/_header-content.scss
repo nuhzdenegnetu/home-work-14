@@ -2,44 +2,50 @@
 @use "../../mixins/index" as *;
 
 
-.product-basket{
+.product-basket {
     display: flex;
     align-items: center;
     text-decoration: none;
 }
-.product{
+
+.product {
     display: flex;
     align-items: center;
 }
-.product__count{
+
+.product__count {
     text-decoration: none;
     font-size: 1.5rem;
     color: $color-white;
 }
-.contact{
+
+.contact {
     display: flex;
     align-items: center;
     gap: $gap-sm;
     margin-left: 43px;
 }
-.contact-btn{
+
+.contact-btn {
     text-decoration: none;
     color: $color-white;
     font-weight: 700;
-    border:1px $color-white solid;
+    border: 1px $color-white solid;
     border-radius: 4px;
     padding: 1rem 2rem;
 }
-.contact-btn:hover{
+
+.contact-btn:hover {
     text-decoration: none;
     color: $color-white;
     font-weight: 700;
     background-color: $color-hover;
-    border: 1px rgba(0,0,0,0.3) solid;
+    border: 1px rgba(0, 0, 0, 0.3) solid;
     padding: 1rem 2rem;
     transition: background-color 0.3s, transform 0.3s;
 }
-.navigation__container{
+
+.navigation__container {
     background-color: $color-dark;
     width: 100%;
     display: flex;
@@ -47,10 +53,12 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.header-main{
+
+.header-main {
     padding-top: 309px;
 }
-.main__title{
+
+.main__title {
     font-size: 32px;
     font-weight: 700;
     line-height: 39.01px;
@@ -60,7 +68,8 @@
     color: $color-text;
     letter-spacing: 0.25px;
 }
-.main-container{
+
+.main-container {
     display: flex;
     gap: $gap-x3;
     flex-direction: column;

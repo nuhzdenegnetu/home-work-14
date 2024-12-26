@@ -1,29 +1,34 @@
 @use "../../../presets/index" as *;
 @use "../../../mixins/index" as *;
 
-.section-about{
+.section-about {
     margin-bottom: 116px;
 
 }
-.about-title{
+
+.about-title {
     margin: 0 0 44px 0;
     justify-content: flex-end;
 }
+
 .about__container {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
-.about-info{
+
+.about-info {
     display: flex;
     flex-direction: column;
 }
-.about__text{
+
+.about__text {
     width: 432px;
     height: 203px;
     line-height: 1.238rem;
 }
-.about-info__title{
+
+.about-info__title {
     margin: 0;
     font-size: 2rem;
     color: $color-hover;
