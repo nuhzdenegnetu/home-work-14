@@ -31,3 +31,26 @@ images.forEach((img, index) => {
     updateCarousel(currentIndex);
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const sideMenu = document.querySelector(".side-menu");
+
+  // Устанавливаем текст "☰" в элемент гамбургера при загрузке
+  hamburger.innerText = "☰";
+
+  // Обработчик события клика на гамбургер
+  hamburger.addEventListener("click", () => {
+    sideMenu.classList.toggle("active"); // Добавляем или убираем активный класс для меню
+
+    // Переключаем текст кнопки и класс активности
+    if (sideMenu.classList.contains("active")) {
+      hamburger.classList.add("hamburger--active"); // Добавляем активный класс
+      hamburger.innerText = "✖"; // Меняем текст на крестик
+    } else {
+      hamburger.classList.remove("hamburger--active"); // Убираем активный класс
+      hamburger.innerText = "☰"; // Возвращаем текст "☰"
+    }
+  });
+});

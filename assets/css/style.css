@@ -237,7 +237,6 @@ html{
   margin:0;
   padding:0;
 }
-
 .header{
   background-image:url(../images/bg-image--header.png);
   background-position:center;
@@ -1072,7 +1071,6 @@ input [type=time]{
       -ms-flex-direction:column;
           flex-direction:column;
   margin:0 0 27px 483px;
-  width:min(100% - 30px, 602px);
 }
 
 .reviews-description__title{
@@ -1298,4 +1296,201 @@ input [type=time]{
 
 .copyright-info__title{
   margin:0 0 21px 0;
+}
+
+@media screen and (min-width: 1014px){
+  .side-menu{
+    display:none;
+  }
+  .hamburger{
+    display:none;
+  }
+}
+
+@media screen and (max-width: 1119px){
+  .section-price{
+    background-image:none;
+    margin-bottom:0;
+  }
+  .price__list{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(3, 1fr);
+    grid-column-gap:54px;
+    grid-row-gap:61px;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+  }
+  .price__item{
+    justify-self:center;
+  }
+  .about{
+    font-size:2rem;
+  }
+  .about__container{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    gap:20px;
+  }
+  .about-info{
+    margin-left:106px;
+  }
+  .production__list{
+    row-gap:64px;
+  }
+  .reviews-description__title{
+    font-size:1rem;
+  }
+  .reviews-description{
+    margin:0 0 0 243px;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    -ms-flex-line-pack:center;
+        align-content:center;
+  }
+  .contact-info__title{
+    font-size:2rem;
+  }
+}
+
+@media screen and (max-width: 1013px){
+  .navigation__list,
+  .navigation__logo,
+  .contact{
+    display:none;
+  }
+  .navigation__container{
+    -webkit-box-pack:end;
+        -ms-flex-pack:end;
+            justify-content:flex-end;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+  }
+  .side-menu__container{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+  }
+  .side-menu{
+    position:fixed;
+    top:0;
+    left:-395px;
+    width:351px;
+    height:100%;
+    background-color:#222222;
+    color:#fff;
+    z-index:1000;
+    -webkit-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    padding:20px;
+  }
+  .side-menu.active{
+    left:0;
+    color:white;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+  }
+  .side-menu__logo{
+    margin-bottom:20px;
+    margin-top:31px;
+  }
+  .side-menu__nav{
+    list-style:none;
+    padding:0;
+    margin:20px 0 0 41px;
+  }
+  .side-menu__nav li{
+    margin-bottom:2rem;
+  }
+  .side-menu__nav li a{
+    color:#fff;
+    text-decoration:none;
+  }
+  .side-menu__nav li a:hover{
+    text-decoration:underline;
+  }
+  .side-menu__buttons{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    gap:15px;
+    margin-top:62%;
+  }
+  .side-menu__buttons button{
+    text-decoration:none;
+    color:#ffffff;
+    background-color:rgba(0, 0, 0, 0);
+    font-weight:700;
+    border:1px #ffffff solid;
+    border-radius:4px;
+    padding:1rem 2rem;
+  }
+  .hamburger{
+    position:absolute;
+    top:28px;
+    left:20px;
+    cursor:pointer;
+    z-index:1100;
+    color:white;
+    width:25px;
+    height:25px;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    font-size:1.5rem;
+  }
+  .hamburger.hamburger--active{
+    -webkit-transform:rotate(90deg);
+        -ms-transform:rotate(90deg);
+            transform:rotate(90deg);
+    color:white;
+    left:334px;
+    font-size:1.5rem;
+    top:30px;
+  }
+  .cart{
+    position:fixed;
+    top:20px;
+    right:20px;
+    color:#fff;
+    font-size:20px;
+    z-index:1100;
+  }
+  .cart span{
+    font-weight:bold;
+  }
 }
