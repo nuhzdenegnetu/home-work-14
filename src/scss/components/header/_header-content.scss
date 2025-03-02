@@ -35,7 +35,7 @@
     padding: 1rem 2rem;
 }
 .main__btn{
-    margin-bottom: 311px;
+    margin-bottom: 100px;
 }
 .contact-btn:hover {
     text-decoration: none;
@@ -69,8 +69,13 @@
     max-height: 98px;
     color: $color-text;
     letter-spacing: 0.25px;
+    margin-bottom: 75px;
 }
-
+.main__logo{
+    background-image: url(../../../../assets/images/logo-content.svg);
+    width: 601px;
+    height: 194px;
+}
 .main-container {
     display: flex;
     gap: $gap-x3;

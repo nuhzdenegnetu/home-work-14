@@ -1,6 +1,12 @@
 const images = document.querySelectorAll('.carousel__images');
+const about__images = document.querySelectorAll('.carousel__images-about');
+const production__item = document.querySelectorAll('.production__item');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
+const about__prev = document.getElementById('about__prev');
+const about__next = document.getElementById('about__next');
+const production__prev = document.getElementById('production__prev');
+const production__next = document.getElementById('production__next');
 let currentIndex = 0;
 
 function updateCarousel(index) {
@@ -9,6 +15,24 @@ function updateCarousel(index) {
       img.classList.add('carousel__images--active'); // Добавляем класс active
     } else {
       img.classList.remove('carousel__images--active'); // Убираем класс active
+    }
+  });
+}
+function updateCarouselAbout(index) {
+  about__images.forEach((img, i) => {
+    if (i === index) {
+      img.classList.add('carousel__images--active'); // Добавляем класс active
+    } else {
+      img.classList.remove('carousel__images--active'); // Убираем класс active
+    }
+  });
+}
+function updateCarouselProduction(index) {
+  production__item.forEach((img, i) => {
+    if (i === index) {
+      img.classList.add('production__item--active'); // Добавляем класс active
+    } else {
+      img.classList.remove('production__item--active'); // Убираем класс active
     }
   });
 }
@@ -22,6 +46,24 @@ prev.addEventListener('click', () => {
 next.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % images.length;
   updateCarousel(currentIndex);
+});
+
+about__prev.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + about__images.length) % about__images.length;
+  updateCarouselAbout(currentIndex);
+});
+
+about__next.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % about__images.length;
+  updateCarouselAbout(currentIndex);
+});
+production__prev.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + about__images.length) % about__images.length;
+  updateCarouselProduction(currentIndex);
+});
+production__next.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % about__images.length;
+  updateCarouselProduction(currentIndex);
 });
 
 // Добавляем возможность клика по изображению

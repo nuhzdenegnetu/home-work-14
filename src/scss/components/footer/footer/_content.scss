@@ -11,6 +11,7 @@
 .copyright__nav {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .copyright-content {
@@ -21,6 +22,7 @@
 .copyright-info {
     display: flex;
     gap: 68px;
+    flex-wrap: wrap;
 }
 
 .copyright-navbar__list {
